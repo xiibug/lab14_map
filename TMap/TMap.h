@@ -389,7 +389,7 @@ void TSortMap<TK, TV>::Delete(TK k)
   {
     if (l == 0)
       ind = l;
-    else if (r == count)
+    else if (r == this->count)
       ind = r;
     else
       ind = l;
@@ -424,7 +424,7 @@ void TSortMap<TK, TV>::Add(TK k, TV v)
   }
   if (ind == -1)
   {
-    if (l == 0 && r == count)
+    if (l == 0 && r == this->count)
     {
       if (this->mas[l] > node)
         ind = l;
@@ -434,7 +434,7 @@ void TSortMap<TK, TV>::Add(TK k, TV v)
     else
       if (l == 0)
         ind = l;
-      else if (r == count)
+      else if (r == this->count)
         ind = r;
       else
         ind = l;
