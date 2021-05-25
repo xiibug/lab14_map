@@ -1,0 +1,13 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+before_script:
+  - mkdir ../build
+  - cd ../build
+script:
+  - cmake ../lab14_map
+  - make -j
+  - ./test/test_Map
+notifications:
+  email: false
