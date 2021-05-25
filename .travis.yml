@@ -8,6 +8,6 @@ before_script:
 script:
   - cmake ../lab14_map
   - make -j
-  - ./test/test_Map
+  - ./test/Test_Map
 notifications:
   email: false
